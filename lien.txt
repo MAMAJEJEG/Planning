@@ -1,0 +1,9 @@
+IR G2
+https://adecons.unistra.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=26389&projectId=4&calType=ical&nbWeeks=28
+
+
+IR exam
+https://adecons.unistra.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=17816&projectId=4&calType=ical&nbWeeks=28
+
+All grand debutant
+https://adecons.unistra.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=47289&projectId=4&calType=ical&nbWeeks=28
