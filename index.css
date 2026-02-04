@@ -1,0 +1,71 @@
+body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f9;
+        margin: 0;
+        padding: 20px;
+    }
+    #calendar-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 { text-align: center; color: #333; font-weight: 300; }
+    /* Style minimaliste pour FullCalendar */
+    .fc { --fc-border-color: #eee; }
+    .fc-header-toolbar { margin-bottom: 2em !important; }
+
+#toggle-edit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Style Mode Lecture */
+.btn-read { background-color: #ecf0f1; color: #7f8c8d; }
+/* Style Mode Édition */
+.btn-edit { background-color: #2ecc71; color: white; transform: scale(1.05); }
+
+/* Optionnel : mettre en évidence le calendrier en mode édition */
+.editing-active #calendar {
+    outline: 2px dashed #2ecc71;
+    border-radius: 8px;
+}
+
+.editing-active .fc-event {
+    cursor: pointer !important;
+}
+
+.editing-active .fc-event:hover {
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.5); /* Lueur rouge au survol */
+    filter: brightness(90%);
+}
+
+#modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+    display: flex; justify-content: center; align-items: center; z-index: 1000;
+}
+#custom-modal {
+    background: white; padding: 25px; border-radius: 15px;
+    width: 350px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+#custom-modal h2 { margin-top: 0; font-weight: 300; }
+#custom-modal label { display: block; margin: 15px 0 5px; font-size: 0.9em; color: #666; }
+#custom-modal input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+
+.color-picker { display: flex; gap: 10px; margin-bottom: 20px; }
+.color-opt { width: 30px; height: 30px; border-radius: 50%; cursor: pointer; border: 2px solid transparent; }
+.color-opt.selected { border-color: #333; transform: scale(1.1); }
+
+.modal-buttons { display: flex; flex-direction: column; gap: 10px; }
+.modal-buttons button { padding: 10px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; }
+.btn-primary { background: #2ecc71; color: white; }
+.btn-danger { background: #e74c3c; color: white; }
+#btn-cancel { background: #eee; }
